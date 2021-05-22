@@ -5,7 +5,7 @@ import { Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 function NavBar() {
   return (
     <div>
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg" style={{ backgroundColor: "#f8edeb" }}>
         {/* <Navbar.Brand href="#home" className="nav-name">
           Welcome!
         </Navbar.Brand> */}
