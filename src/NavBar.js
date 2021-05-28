@@ -6,28 +6,39 @@ function NavBar() {
   return (
     <div>
       <Navbar expand="lg" style={{ backgroundColor: "#f8edeb" }}>
-        {/* <Navbar.Brand href="#home" className="nav-name">
-          Welcome!
-        </Navbar.Brand> */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="nav-style">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">About</Nav.Link>
-            {/* <NavDropdown title="icon?" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Projects</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Blog</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
-          </Nav>
-          {/* <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-          </Form> */}
-        </Navbar.Collapse>
+        <Nav>
+          <div style={{ display: "flex", margin: "-20px" }}>
+            <Nav.Link
+              href="#home"
+              style={{
+                fontFamily: "CoffeeSigns",
+                fontSize: "35px",
+                // margin: "-20px ",
+              }}
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              href="#link"
+              style={{
+                fontFamily: "CoffeeSigns",
+                fontSize: "35px",
+                // margin: "-20px",
+              }}
+            >
+              About
+            </Nav.Link>
+          </div>
+        </Nav>
+        <div
+          style={{
+            fontFamily: "CoffeeSigns",
+            fontSize: "45px",
+            margin: "-4px 285px -33px",
+          }}
+        >
+          Crystal Villanueva
+        </div>
       </Navbar>
     </div>
   );
