@@ -19,7 +19,7 @@ function NavBar() {
               Home
             </Nav.Link>
             <Nav.Link
-              to="/about"
+              to="#about"
               target="_blank"
               style={{
                 fontFamily: "CoffeeSigns",
