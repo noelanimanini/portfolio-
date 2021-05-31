@@ -5,7 +5,7 @@ import HomeLayout from "./HomeLayout";
 function Home() {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <HomeLayout />
     </div>
   );

@@ -11,12 +11,16 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexWrap: "wrap",
-    justifyContent: "space-around",
+    // justifyContent: "space-around",
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
   },
   icon: {
     color: "rgba(255, 255, 255, 0.54)",
+  },
+  gridList: {
+    width: 500,
+    height: 450,
   },
 }));
 
@@ -25,18 +29,19 @@ function HomeLayout() {
 
   return (
     <div>
+      <h2
+        style={{
+          fontFamily: "LemonMelon",
+          fontSize: "35px",
+        }}
+      >
+        Projects
+      </h2>
+
       <div className={classes.root}>
-        <GridList cellHeight={180}>
-          <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
-            <ListSubheader
-              component="div"
-              style={{ fontSize: "30px", fontFamily: "'Raleway', sans-serif;" }}
-            >
-              projects
-            </ListSubheader>
-          </GridListTile>
+        <GridList cellHeight={180} className={classes.gridList} cols={3}>
           {projects.map((tile) => (
-            <GridListTile key={tile.img}>
+            <GridListTile key={tile.img} cols={tile.cols || 1}>
               <img src={tile.image} alt={tile.title} />
               <GridListTileBar title={tile.name} />
             </GridListTile>

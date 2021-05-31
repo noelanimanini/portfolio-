@@ -18,6 +18,11 @@ code {
     url(./fonts/CoffeeSigns-jE7ly.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "LemonMelon";
+  src: local("LemonMelon"), url(./fonts/LemonMelon-qZx36.ttf) format("truetype");
+}
+
 /* .nav-name {
   font-family: CoffeeSigns;
   font-size: "63px";
