@@ -1,11 +1,10 @@
 import React from "react";
-import NavBar from "./NavBar";
-import HomeLayout from "./HomeLayout";
+
+import HomeLayout from "../HomeLayout/index";
 
 function Home() {
   return (
     <div>
-      {/* <NavBar /> */}
       <HomeLayout />
     </div>
   );

@@ -4,8 +4,9 @@ import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import ListSubheader from "@material-ui/core/ListSubheader";
+import Banner from "../Banner/index";
 
-import projects from "./projects.js";
+import projects from "../../projects.js";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
   gridList: {
     width: 500,
     height: 450,
+    padding: "10px",
   },
 }));
 
@@ -29,16 +31,8 @@ function HomeLayout() {
 
   return (
     <div>
-      <h2
-        style={{
-          fontFamily: "LemonMelon",
-          fontSize: "35px",
-        }}
-      >
-        Projects
-      </h2>
-
-      <div className={classes.root}>
+      <Banner />
+      <div>
         <GridList cellHeight={180} className={classes.gridList} cols={3}>
           {projects.map((tile) => (
             <GridListTile key={tile.img} cols={tile.cols || 1}>

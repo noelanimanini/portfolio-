@@ -38,6 +38,7 @@ function NavBar() {
               fontFamily: "CoffeeSigns",
               fontSize: "45px",
               margin: "-4px 285px -33px",
+              zIndex: "5",
             }}
           >
             Crystal Villanueva
