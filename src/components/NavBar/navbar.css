@@ -1,0 +1,20 @@
+.parent {
+  /* style={{ backgroundColor: "#f8edeb" }} */
+  background-color: #f8edeb;
+}
+
+.navDiv {
+  /* style={{ display: "flex", margin: "-20px" }} */
+  display: flex;
+  margin: -20px;
+}
+
+.fontStyle {
+  /* style={{
+    fontFamily: "CoffeeSigns",
+    fontSize: "35px",
+    // margin: "-20px ",
+  }} */
+  font-family: CoffeeSigns;
+  font-size: 35px;
+}
