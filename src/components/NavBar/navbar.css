@@ -1,6 +1,7 @@
 .parent {
   /* style={{ backgroundColor: "#f8edeb" }} */
   background-color: #f8edeb;
+  height: 6vh;
 }
 
 .navDiv {
@@ -9,12 +10,6 @@
   margin: -20px;
 }
 
-.fontStyle {
-  /* style={{
-    fontFamily: "CoffeeSigns",
-    fontSize: "35px",
-    // margin: "-20px ",
-  }} */
-  font-family: CoffeeSigns;
-  font-size: 35px;
+.navCollapse {
+  height: 6vh;
 }

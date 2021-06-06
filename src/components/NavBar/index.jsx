@@ -4,16 +4,21 @@ import { Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 
 function NavBar() {
+  const fontStyle = {
+    fontFamily: "CoffeeSigns",
+    fontSize: "35px",
+  };
+
   return (
     <div>
       <Navbar expand="lg" className="parent">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse>
+        <Navbar.Collapse className="navCollapse">
           <Nav className="navDiv">
-            <Nav.Link className="fontStyle" href="/">
+            <Nav.Link style={fontStyle} href="/">
               Home
             </Nav.Link>
-            <Nav.Link href="/about" className="fontStyle">
+            <Nav.Link href="/about" style={fontStyle}>
               About
             </Nav.Link>
           </Nav>
