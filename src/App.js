@@ -11,8 +11,8 @@ function App() {
         <BrowserRouter>
           <NavBar />
           <Switch>
-            <Route exact path="/" render={() => <Home />} />
             <Route exact path="/about" render={() => <About />} />
+            <Route exact path="/" render={() => <Home />} />
           </Switch>
         </BrowserRouter>
       </div>
