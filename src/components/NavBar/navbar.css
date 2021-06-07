@@ -1,5 +1,5 @@
 .parent {
-  /* style={{ backgroundColor: "#f8edeb" }} */
+  /*; */
   background-color: #f8edeb;
   height: 6vh;
 }
@@ -7,9 +7,15 @@
 .navDiv {
   /* style={{ display: "flex", margin: "-20px" }} */
   display: flex;
-  margin: -20px;
+  /* margin: -20px; */
 }
 
 .navCollapse {
   height: 6vh;
+}
+
+.toggleClass {
+  display: flex;
+  position: relative;
+  /* top: -15px; */
 }

@@ -1,18 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
-import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
+import navbar from "./navbar.css";
 
-function NavBar() {
-  const fontStyle = {
-    fontFamily: "CoffeeSigns",
-    fontSize: "35px",
-  };
+const fontStyle = {
+  fontFamily: "CoffeeSigns",
+  fontSize: "35px",
+  display: "flex",
+  flexDirection: "column",
+};
 
+const parent = {
+  backgroundColor: "#f8edeb",
+  height: "6vh",
+};
+
+const NavBar = () => {
+  const [items, setItems] = useState();
   return (
-    <div>
-      <Navbar expand="lg" className="parent">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <div className="parent">
+      <Navbar expand="lg">
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          className="toggleClass"
+        />
         <Navbar.Collapse className="navCollapse">
           <Nav className="navDiv">
             <Nav.Link style={fontStyle} href="/">
@@ -22,20 +33,21 @@ function NavBar() {
               About
             </Nav.Link>
           </Nav>
-          <div
-            style={{
-              fontFamily: "CoffeeSigns",
-              fontSize: "45px",
-              margin: "-4px 285px -33px",
-              zIndex: "5",
-            }}
-          >
-            Crystal Villanueva
-          </div>
         </Navbar.Collapse>
       </Navbar>
+      <div
+        style={{
+          fontFamily: "CoffeeSigns",
+          fontSize: "45px",
+          display: "inline-block",
+          zIndex: "5",
+          transform: `translate(10px, -62px)`,
+        }}
+      >
+        Crystal Villanueva
+      </div>
     </div>
   );
-}
+};
 
 export default NavBar;
