@@ -6,7 +6,7 @@ import Projects_layout from "../Projects_layout/index";
 function HomeLayout() {
   return (
     <div>
-      <Banner />
+      {/* <Banner /> */}
       <div
         style={{
           display: "flex",

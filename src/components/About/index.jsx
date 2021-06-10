@@ -2,6 +2,8 @@ import React from "react";
 import thank from "../images/thank.png";
 import crystal from "../images/crystal.JPG";
 import { Image, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import about from "./about.css";
 
 function About() {
   const imageStyle = {
@@ -20,6 +22,9 @@ function About() {
 
   return (
     <div>
+      <Link to="/">
+        <button className="backbtn">back</button>
+      </Link>
       <div
         style={{
           fontFamily: "LemonMelon",

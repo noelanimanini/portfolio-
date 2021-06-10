@@ -1,3 +1,57 @@
-h1 {
-  color: pink;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightbtn {
+  color: black;
+  font-family: LemonMelon;
+  text-decoration: none;
+  font-size: 45px;
+  position: fixed;
+}
+
+.leftbtn {
+  color: black;
+  font-family: LemonMelon;
+  text-decoration: none;
+  font-size: 45px;
+  position: fixed;
+  /* left: 10%; */
+  /* bottom: 51%; */
+}
+.leftbtn:active {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: pink;
+  }
+}
+
+.welcome {
+  /* padding-top: 200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: CoffeeSigns;
+  font-size: 45px;
+}
+
+.projectStyle {
+  transform: rotate(-91deg);
+  position: fixed;
+  /* left: 6%; */
+  bottom: 51%;
+}
+
+.aboutStyle {
+  transform: rotate(91deg);
+  position: fixed;
+  /* left: 6%; */
+  bottom: 58%;
+  right: 1%;
 }
