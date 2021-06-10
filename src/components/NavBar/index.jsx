@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
+import Video from "./beach1.mp4";
 import {
   useSpring,
   useTransition,
@@ -19,10 +20,18 @@ const fontStyle = {
   flexDirection: "column",
 };
 let lists = [
-  { word: "Welcome", color: "red", opacity: 0.5, trans: 50 },
-  { word: "to", color: "blue", opacity: 1, trans: 50 },
-  { word: "my", color: "green", opacity: 0.2, trans: 50 },
-  { word: "portfolio!", color: "orange", opacity: 0.8, trans: 50 },
+  // { word: "Crystal ", color: "red", opacity: 0.5, trans: 50 },
+  { word: "Crystal Villanueva", color: "blue", opacity: 1, trans: 50 },
+  // { word: "portfolio", color: "green", opacity: 0.2, trans: 50 },
+  // { word: "portfolio!", color: "orange", opacity: 0.8, trans: 50 },
+  // { word: "crystal", color: "orange", opacity: 0.8, trans: 50 },
+];
+
+const slides = [
+  "photo-1517191434949-5e90cd67d2b6",
+  "photo-1512951670161-b5c6c632b00e",
+  "photo-1533119510849-b64bf60c83c3",
+  "photo-1522518961115-07c922089dd4",
 ];
 
 const NavBar = () => {
@@ -56,13 +65,13 @@ const NavBar = () => {
     from: {
       // position: "fixed",
       opacity: 0,
-      transform: "translate3d(0px,0%,0em)",
+      transform: "translate3d(0px,0%,-7em)",
     },
     to: {
       opacity: 1,
-      transform: "translate3d(0px, 100%, 3em)",
+      transform: "translate3d(0px, 100%, 7em)",
     },
-    delay: 200,
+    delay: 300,
     config: config.molasses,
     onRest: () => setList([]),
   });
@@ -76,7 +85,7 @@ const NavBar = () => {
       opacity: 1,
       transform: "translate3d(0px, 100%, 3em)",
     },
-    delay: 500,
+    delay: 600,
     config: config.molasses,
     onRest: () => setList([]),
   });
@@ -93,30 +102,30 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="aboutStyle">
-        <Link to="/about">
-          <animated.h1 className="rightbtn" style={fade2}>
-            About
+      <video autoPlay muted loop id="video">
+        <source src={Video} type="video/mp4" />
+      </video>
+      <div className="glass">
+        {lists.map((x) => (
+          <animated.h1 style={fade} className="welcome">
+            {x.word}
           </animated.h1>
-        </Link>
-      </div>
-      {/* <div className="welcome">
-        {fade((styles, item) => (
-          <animated.h1 style={styles}>{item.word}</animated.h1>
         ))}
-      </div> */}
-      {lists.map((x) => (
-        <animated.h1 style={fade} className="welcome">
-          {x.word}
-        </animated.h1>
-      ))}
-      <div className="projectStyle">
-        <Link to="/projects">
-          <animated.h1 className="leftbtn" style={fade2}>
-            {" "}
-            Projects
-          </animated.h1>
-        </Link>{" "}
+        <div className="projectStyle">
+          <Link to="/projects">
+            <animated.h1 className="leftbtn" style={fade2}>
+              {" "}
+              Projects
+            </animated.h1>
+          </Link>{" "}
+        </div>
+        <div className="aboutStyle">
+          <Link to="/about">
+            <animated.h1 className="rightbtn" style={fade2}>
+              About
+            </animated.h1>
+          </Link>
+        </div>
       </div>
     </div>
   );
