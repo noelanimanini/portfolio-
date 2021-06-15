@@ -1,10 +1,13 @@
 import React from "react";
 import thank from "../images/thank.png";
 import crystal from "../images/crystal.JPG";
+import Skills from "../Skills/index";
 import { Image, Card } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Video from "./video.mp4";
+import Video from "./video1.mp4";
 import {
   useSpring,
   useTransition,
@@ -42,7 +45,7 @@ function About() {
       <video autoPlay muted loop id="video">
         <source src={Video} type="video/mp4" />
       </video>
-      <div className="glass">
+      <div className="square">
         <animated.div style={fade2} className="name">
           Neuroscientist ||* Software Engineer
         </animated.div>
@@ -59,7 +62,10 @@ function About() {
           engineer with a background in neuroscience.
         </div>
         <Image src={crystal} className="crystal" roundedCircle />
-        <AiFillGithub style={{ width: "50px", height: "50px" }} />
+        <AiFillGithub className="icon" />
+        <AiFillLinkedin className="icon" />
+        <MdEmail className="icon" />
+        <Skills />
       </div>
     </div>
   );
