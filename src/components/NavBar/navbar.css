@@ -37,7 +37,7 @@
   background: inherit;
   display: inline-block;
   box-shadow: inset 0 0 0 500px rgb(255 255 255);
-  filter: blur(50.5rem);
+  filter: blur(100.5em);
   position: fixed;
   left: 0%;
   bottom: 0%;
@@ -79,21 +79,39 @@
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background: pink;
+  .welcome h1 {
+    font-size: 30px;
+    top: 45%;
+    position: relative;
+    left: 75%;
+    max-width: 55%;
+    /* font-family: LemonMelon; */
+    /* transform: translate(-60%, -60%); */
+    color: white;
+  }
+
+  .aboutStyle h1 {
+    font-size: 30px;
+    position: relative;
+    transform: rotate(50deg);
+    /* right: -10; */
+    padding-left: 150%;
+    z-index: 5;
+  }
+
+  .projectStyle h1 {
+    font-size: 30px;
   }
 }
 
 .welcome {
-  padding-top: 120px;
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-100%, -100%);
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
   font-family: CoffeeSigns;
   font-size: 60px;
-  z-index: 5;
   text-shadow: -5px 1px 51px #0000002e;
 }
 
@@ -109,6 +127,6 @@
   transform: rotate(91deg);
   position: fixed;
   right: -3%;
-  bottom: 63%;
+  bottom: 64%;
   z-index: 5;
 }

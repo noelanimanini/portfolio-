@@ -106,11 +106,17 @@ const NavBar = () => {
         <source src={Video} type="video/mp4" />
       </video>
       <div className="glass">
-        {lists.map((x) => (
+        <div className="welcome">
+          <animated.h1 className="welcome" style={fade2}>
+            {" "}
+            Crystal Villanueva
+          </animated.h1>
+        </div>
+        {/* {lists.map((x) => (
           <animated.h1 style={fade} className="welcome">
             {x.word}
           </animated.h1>
-        ))}
+        ))} */}
         <div className="projectStyle">
           <Link to="/projects">
             <animated.h1 className="leftbtn" style={fade2}>

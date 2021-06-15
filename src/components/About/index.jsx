@@ -2,7 +2,16 @@ import React from "react";
 import thank from "../images/thank.png";
 import crystal from "../images/crystal.JPG";
 import { Image, Card } from "react-bootstrap";
+import { AiFillGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Video from "./video.mp4";
+import {
+  useSpring,
+  useTransition,
+  animated,
+  config,
+  useTrail,
+} from "react-spring";
 import about from "./about.css";
 
 function About() {
@@ -14,43 +23,44 @@ function About() {
     width: "30%",
   };
 
-  const back = {
-    borderStyle: "groove",
-    borderColor: "bisque",
-    display: "inline-block",
-  };
+  const fade2 = useSpring({
+    from: {
+      // position: "fixed",
+      opacity: 0,
+      transform: "translate3d(0px,0%,0em)",
+    },
+    to: {
+      opacity: 1,
+      transform: "translate3d(0px, 100%, 3em)",
+    },
+    delay: 600,
+    config: config.molasses,
+  });
 
   return (
     <div>
-      <Link to="/">
-        <button className="backbtn">back</button>
-      </Link>
-      <div
-        style={{
-          fontFamily: "LemonMelon",
-          fontSize: "35px",
-        }}
-      >
-        <h1 style={{ paddingTop: "15px" }}>
-          {" "}
-          | Software Engineer | Neuroscientist |{" "}
-        </h1>
-
-        <Image src={thank} style={thankImage} />
-        <Image src={crystal} roundedCircle style={imageStyle} />
+      <video autoPlay muted loop id="video">
+        <source src={Video} type="video/mp4" />
+      </video>
+      <div className="glass">
+        <animated.div style={fade2} className="name">
+          Neuroscientist ||* Software Engineer
+        </animated.div>
+        <div className="projectStyle">
+          <Link to="/">
+            <animated.h1 className="hmbtn" style={fade2}>
+              {" "}
+              Home
+            </animated.h1>
+          </Link>
+        </div>
+        <div>
+          Hello, ny name is Crystal Villanueva and I'm a Seattle based software
+          engineer with a background in neuroscience.
+        </div>
+        <Image src={crystal} className="crystal" roundedCircle />
+        <AiFillGithub style={{ width: "50px", height: "50px" }} />
       </div>
-      <Card
-        style={{ width: "65%", display: "inline-block", borderRadius: "70&" }}
-      >
-        <Card.Body>
-          Hello! Thank you for visiting my portfolio. My name is Crystal and I'm
-          a Fullstack software engineer with a background in neuroscience and a
-          love for language and hackathons. I have always been the sort of
-          person who seeks consensus, my approach to leadership is collaborative
-          and team-oriented. I believe the most effective technical solutions
-          are realized when all stakeholder perspectives are valued.
-        </Card.Body>
-      </Card>
     </div>
   );
 }
