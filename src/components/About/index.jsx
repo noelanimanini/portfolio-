@@ -7,7 +7,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Video from "./video1.mp4";
+import Video from "./video3.mp4";
 import {
   useSpring,
   useTransition,

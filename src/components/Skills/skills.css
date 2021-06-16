@@ -6,6 +6,51 @@
   /* position: fixed;
   bottom: 250px; */
 }
+
+.topDog {
+  z-index: 1;
+  display: flex;
+  padding: 10px;
+  width: 62%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.raise {
+  z-index: 1;
+}
+
+.JS,
+.react,
+.css3,
+.html5,
+.ruby,
+.sql,
+.noSQL,
+.material,
+.figma {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.icon2:hover ~ .JS,
+.icon2:hover ~ .react,
+.icon2:hover ~ .css3,
+.icon2:hover ~ .html5,
+.icon2:hover ~ .ruby,
+.icon2:hover ~ .sql,
+.icon2:hover ~ .noSQL,
+.icon2:hover ~ .material,
+.icon2:hover ~ .figma {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+.icon2:hover {
+  color: black;
+  transform: translateY(-10px);
+}
+
 @keyframes load {
   from {
     width: 0%;
@@ -31,6 +76,7 @@
   width: 50px;
   height: 50px;
   color: #fff;
+  transition: transform 250ms;
 }
 
 .bar {
@@ -75,5 +121,5 @@
   width: calc(90% - 10px);
 }
 .bar.expert::before {
-  width: calc(100% - 10px);
+  width: calc(100%);
 }
