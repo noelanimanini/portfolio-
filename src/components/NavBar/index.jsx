@@ -71,7 +71,7 @@ const NavBar = () => {
       opacity: 1,
       transform: "translate3d(0px, 100%, 7em)",
     },
-    delay: 300,
+    delay: 600,
     config: config.molasses,
     onRest: () => setList([]),
   });

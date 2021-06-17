@@ -11,12 +11,15 @@
   z-index: 1;
   display: flex;
   padding: 10px;
-  width: 62%;
+  width: 65%;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .raise {
+  width: 80px;
   z-index: 1;
+  color: #f8edeb;
+  font-family: LemonMelon;
 }
 
 .JS,
@@ -47,8 +50,9 @@
   z-index: 1;
 }
 .icon2:hover {
-  color: black;
+  color: #f8edeb;
   transform: translateY(-10px);
+  text-shadow: 3px 6px white;
 }
 
 @keyframes load {
@@ -86,7 +90,7 @@
   margin-bottom: 2px;
   /* font-size: 12px; */
   color: #fff;
-  /* font-weight: bold; */
+
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .bar::before {
@@ -95,17 +99,18 @@
   display: flex;
   padding: 4px 0 4px 7px;
   border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
+  animation: load 4s 0s;
+  -webkit-animation: load 4s 0s;
+  -moz-animation: load 4s 0s;
+  -o-animation: load 4s 0s;
 }
 
 .bar.front::before {
-  background-color: #ffcc33;
+  /* border: lightslategrey; */
+  background-color: #d8e2dc;
 }
 .bar.back::before {
-  background-color: #a6cfe3;
+  background-color: #fec5bb;
 }
 
 .bar.learning::before {

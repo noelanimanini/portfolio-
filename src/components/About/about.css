@@ -13,8 +13,15 @@
   padding: 0;
 }
 
+.bkground {
+  background: url("../images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
 .square {
-  height: 60vh;
+  height: 80vh;
   width: 90vw;
   box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
   transform: translate(0%, 10%);
@@ -35,11 +42,26 @@
   left: 0%;
   bottom: 0%;
 }
-
+.textDiv {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  float: right;
+  flex-direction: row-reverse;
+  /* padding: 21px; */
+  margin-right: 16px;
+}
 .name {
   color: white;
   font-family: CoffeeSigns;
-  font-size: 60px;
+  font-size: 40px;
+}
+.name2 {
+  color: white;
+  font-family: LemonMelon;
+  font-size: 25px;
+  width: 50%;
+  float: right;
 }
 
 .crystal {
@@ -48,8 +70,38 @@
   z-index: 2;
 }
 
-.icon {
+.socialIcons {
+  width: 40px;
+  height: 40px;
+}
+
+.socialIcons:hover {
+  color: #f8edeb;
+  transform: translateY(10px);
+  transition: 0.3s;
+  text-shadow: 3px 6px white;
+}
+
+.socialIcons:hover ~ .git,
+.socialIcons:hover ~ .link,
+.socialIcons:hover ~ .email {
+  color: white;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+.git,
+.link,
+.email {
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.social {
   z-index: 2;
-  width: 50px;
-  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

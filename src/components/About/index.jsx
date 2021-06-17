@@ -7,7 +7,8 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Video from "./video3.mp4";
+// import Video from "./video3.mp4";
+
 import {
   useSpring,
   useTransition,
@@ -41,14 +42,14 @@ function About() {
   });
 
   return (
-    <div>
-      <video autoPlay muted loop id="video">
+    <div className="bkground">
+      {/* <video autoPlay muted loop id="video">
         <source src={Video} type="video/mp4" />
-      </video>
+      </video> */}
       <div className="square">
-        <animated.div style={fade2} className="name">
+        {/* <animated.div style={fade2} className="name">
           Neuroscientist ||* Software Engineer
-        </animated.div>
+        </animated.div> */}
         <div className="projectStyle">
           <Link to="/">
             <animated.h1 className="hmbtn" style={fade2}>
@@ -57,15 +58,34 @@ function About() {
             </animated.h1>
           </Link>
         </div>
-        <div>
-          Hello, ny name is Crystal Villanueva and I'm a Seattle based software
-          engineer with a background in neuroscience.
+        <div className="textDiv">
+          <div className="name">Hello, ny name is Crystal </div>
+          <div className="name2">
+            {" "}
+            I'm a Seattle based software engineer with a background in
+            neuroscience.{" "}
+            <div className="social">
+              <div>
+                <AiFillGithub
+                  className="socialIcons"
+                  onClick={() => console.log("this works")}
+                />
+                <div className="git">Github</div>
+              </div>
+              <div>
+                <AiFillLinkedin className="socialIcons" />
+                <div className="link">Linkedin</div>
+              </div>
+              <div>
+                <MdEmail className="socialIcons" />
+                <div className="email"> Email </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <Image src={crystal} className="crystal" roundedCircle />
-        <AiFillGithub className="icon" />
-        <AiFillLinkedin className="icon" />
-        <MdEmail className="icon" />
-        <Skills />
+        {/* <Image src={crystal} className="crystal" roundedCircle /> */}
+
+        {/* <Skills /> */}
       </div>
     </div>
   );
