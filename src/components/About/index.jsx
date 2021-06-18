@@ -66,26 +66,49 @@ function About() {
             neuroscience.{" "}
             <div className="social">
               <div>
-                <AiFillGithub
-                  className="socialIcons"
-                  onClick={() => console.log("this works")}
-                />
-                <div className="git">Github</div>
+                <a
+                  href="https://github.com/noelanimanini"
+                  className="target"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none", color: "#ffffff" }}
+                >
+                  <AiFillGithub
+                    className="socialIcons"
+                    onClick={() => console.log("this works")}
+                  />
+                  <div className="git">Github</div>
+                </a>
               </div>
               <div>
-                <AiFillLinkedin className="socialIcons" />
-                <div className="link">Linkedin</div>
+                <a
+                  href="https://www.linkedin.com/in/crystal-villanueva-151353145/"
+                  className="target"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none", color: "#ffffff" }}
+                >
+                  <AiFillLinkedin className="socialIcons" />
+                  <div className="link">Linkedin</div>
+                </a>
               </div>
               <div>
-                <MdEmail className="socialIcons" />
-                <div className="email"> Email </div>
+                <Link
+                  to="/email"
+                  style={{ textDecoration: "none", color: "#ffffff" }}
+                  target="_blank"
+                >
+                  <MdEmail className="socialIcons" />
+                  <div className="email"> Email </div>
+                </Link>
               </div>
             </div>
           </div>
         </div>
         {/* <Image src={crystal} className="crystal" roundedCircle /> */}
-
-        {/* <Skills /> */}
+        <div className="skills">
+          <Skills />
+        </div>
       </div>
     </div>
   );

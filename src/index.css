@@ -8,3 +8,8 @@
   font-family: "LemonMelon";
   src: local("LemonMelon"), url(./fonts/LemonMelon-qZx36.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "Julius Sans One", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+}
