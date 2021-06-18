@@ -16,7 +16,7 @@
 .skills {
   position: relative;
   z-index: 1;
-  transform: translate(50%, 105%);
+  transform: translate(50%, 50%);
   width: 43%;
 }
 
@@ -50,33 +50,39 @@
   left: 0px;
 }
 .textDiv {
-  display: flex;
+  /* display: flex;
   width: 50%;
   flex-wrap: wrap;
-  float: right;
-  flex-direction: row-reverse;
-  /* padding: 21px; */
-  margin-right: 16px;
+  float: center;
+  flex-direction: row-reverse; */
   position: relative;
   z-index: 100;
+  /* transform: translate(60%, 30%); */
 }
 .name {
   color: white;
   font-family: CoffeeSigns;
-  font-size: 40px;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
 }
 .name2 {
   color: white;
   font-family: LemonMelon;
-  font-size: 25px;
-  width: 50%;
+  font-size: 30px;
   float: right;
+  display: flex;
+  width: 40%;
+  padding-top: 18px;
 }
 
 .crystal {
+  z-index: 1;
+  position: relative;
   width: 20%;
-  height: 30%;
-  z-index: 2;
 }
 
 .socialIcons {
@@ -119,6 +125,8 @@ a {
   z-index: 2;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  float: right;
+  /* transform: translateX(4em); */
+  /* justify-content: center;
+  align-items: center; */
 }

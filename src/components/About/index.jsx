@@ -1,6 +1,6 @@
 import React from "react";
 import thank from "../images/thank.png";
-import crystal from "../images/crystal.JPG";
+import crystal from "../images/photo.jpg";
 import Skills from "../Skills/index";
 import { Image, Card } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
@@ -59,11 +59,15 @@ function About() {
           </Link>
         </div>
         <div className="textDiv">
-          <div className="name">Hello, ny name is Crystal </div>
-          <div className="name2">
-            {" "}
-            I'm a Seattle based software engineer with a background in
-            neuroscience.{" "}
+          <div className="name">
+            Hello, ny name is Crystal{" "}
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <Image src={crystal} className="crystal" roundedCircle />
+              <div className="name2">
+                I'm a Seattle based software engineer with a background in
+                neuroscience.{" "}
+              </div>
+            </div>
             <div className="social">
               <div>
                 <a
@@ -105,7 +109,7 @@ function About() {
             </div>
           </div>
         </div>
-        {/* <Image src={crystal} className="crystal" roundedCircle /> */}
+
         <div className="skills">
           <Skills />
         </div>
