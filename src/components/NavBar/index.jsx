@@ -21,7 +21,7 @@ const NavBar = () => {
             data-aos-easing="ease-in-sine"
           >
             <Link to="/projects" className="linkStyle">
-              <Tilt style={{ height: "1px", width: "1px" }}>
+              <Tilt style={{ height: "10px", width: "10px" }}>
                 <li className="projectStyle">Projects</li>
               </Tilt>
             </Link>
@@ -37,7 +37,7 @@ const NavBar = () => {
             data-aos-easing="ease-in-sine"
           >
             <Link to="/about" className="linkStyle">
-              <Tilt style={{ height: "1px", width: "1px" }}>
+              <Tilt style={{ height: "10px" }}>
                 <li className="aboutStyle">About</li>
               </Tilt>
             </Link>

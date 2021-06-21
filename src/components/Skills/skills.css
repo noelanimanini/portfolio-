@@ -1,7 +1,6 @@
 .container {
   z-index: 1;
-  width: 50%;
-  height: 50%;
+
   display: -moz-inline-box;
   /* position: fixed;
   bottom: 250px; */
@@ -11,7 +10,7 @@
   z-index: 1;
   display: flex;
   padding: 10px;
-  width: 65%;
+  width: 70%;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -31,7 +30,9 @@
 .sql,
 .noSQL,
 .material,
-.figma {
+.figma,
+.bootstrap,
+.heroku {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
@@ -54,6 +55,19 @@
   color: #f8edeb;
   transform: translateY(-10px);
   text-shadow: 3px 6px white;
+}
+
+.icon3:hover {
+  color: #f8edeb;
+  transform: translateY(-10px);
+  text-shadow: 3px 6px white;
+}
+
+.icon3:hover ~ .bootstrap,
+.icon3:hover ~ .heroku {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
 }
 
 @keyframes load {
@@ -84,6 +98,15 @@
   transition: transform 250ms;
 }
 
+.icon3 {
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  padding: 4px;
+  transition: transform 250ms;
+}
+
 .bar {
   background-color: #eee;
   padding: 2px;
@@ -108,10 +131,10 @@
 
 .bar.front::before {
   /* border: lightslategrey; */
-  background-color: #d8e2dc;
+  background-color: #d8bbff;
 }
 .bar.back::before {
-  background-color: #fec5bb;
+  background-color: #e56b6f;
 }
 
 .bar.learning::before {
@@ -121,7 +144,7 @@
   width: calc(40% - 10px);
 }
 .bar.intermediate::before {
-  width: calc(60% - 10px);
+  width: calc(60%);
 }
 .bar.advanced::before {
   width: calc(90% - 10px);

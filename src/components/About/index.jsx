@@ -1,75 +1,44 @@
 import React from "react";
 import thank from "../images/thank.png";
-import crystal from "../images/photo.jpg";
+import crystal from "../images/crystal2.jpg";
 import Skills from "../Skills/index";
 import { Image, Card } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
-// import Video from "./video3.mp4";
-
-import {
-  useSpring,
-  useTransition,
-  animated,
-  config,
-  useTrail,
-} from "react-spring";
-import about from "./about.css";
+import Tilt from "react-vanilla-tilt";
+import "./about.css";
 
 function About() {
-  const imageStyle = {
-    width: "35%",
-  };
-
-  const thankImage = {
-    width: "30%",
-  };
-
-  const fade2 = useSpring({
-    from: {
-      // position: "fixed",
-      opacity: 0,
-      transform: "translate3d(0px,0%,0em)",
-    },
-    to: {
-      opacity: 1,
-      transform: "translate3d(0px, 100%, 3em)",
-    },
-    delay: 600,
-    config: config.molasses,
-  });
-
   return (
     <div className="bkground">
-      {/* <video autoPlay muted loop id="video">
-        <source src={Video} type="video/mp4" />
-      </video> */}
       <div className="square">
-        {/* <animated.div style={fade2} className="name">
-          Neuroscientist ||* Software Engineer
-        </animated.div> */}
-        <div className="projectStyle">
-          <Link to="/">
-            <animated.h1 className="hmbtn" style={fade2}>
-              {" "}
-              Home
-            </animated.h1>
-          </Link>
-        </div>
-        <div className="textDiv">
-          <div className="name">
-            Hello, ny name is Crystal{" "}
-            <div style={{ display: "flex", flexDirection: "row" }}>
-              <Image src={crystal} className="crystal" roundedCircle />
-              <div className="name2">
-                I'm a Seattle based software engineer with a background in
-                neuroscience.{" "}
-              </div>
+        <p>Hi I'm Crystal</p>
+        <div style={{ display: "flex" }}>
+          <div className="back">
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <h1 className="hmbtn"> Home</h1>
+            </Link>
+          </div>
+          <div className="textDiv">
+            <div className="skills">
+              <Skills />
             </div>
-            <div className="social">
-              <div>
+            <div className="name">
+              {/* <Image src={crystal} style={{ width: "40%" }} roundedCircle /> */}
+
+              <div className="bio">
+                <Image
+                  src={crystal}
+                  style={{ width: "45%", height: "10%" }}
+                  roundedCircle
+                />
+                I'm a Seattle based software engineer with a background in
+                neuroscience.
+              </div>
+
+              <div className="social">
                 <a
                   href="https://github.com/noelanimanini"
                   className="target"
@@ -83,8 +52,7 @@ function About() {
                   />
                   <div className="git">Github</div>
                 </a>
-              </div>
-              <div>
+
                 <a
                   href="https://www.linkedin.com/in/crystal-villanueva-151353145/"
                   className="target"
@@ -95,8 +63,7 @@ function About() {
                   <AiFillLinkedin className="socialIcons" />
                   <div className="link">Linkedin</div>
                 </a>
-              </div>
-              <div>
+
                 <Link
                   to="/email"
                   style={{ textDecoration: "none", color: "#ffffff" }}
@@ -108,10 +75,6 @@ function About() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="skills">
-          <Skills />
         </div>
       </div>
     </div>

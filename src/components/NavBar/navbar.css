@@ -115,7 +115,7 @@
   color: white;
   font-size: 40px;
   display: block;
-  transform: translateX(-40px);
+  /* transform: translateX(-40px); */
 }
 
 .aboutStyle {
@@ -126,6 +126,7 @@
   text-transform: uppercase;
   font-family: LemonMelon;
   color: white;
+  display: block;
   font-size: 40px;
 }
 
@@ -138,6 +139,7 @@
 .spacing {
   display: inline-flex;
   transform: translate(-5px, 1vh);
+  width: inherit;
 }
 
 .linkStyle:hover {
