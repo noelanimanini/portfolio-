@@ -1,30 +1,48 @@
 import React from "react";
-import Tilt from "react-vanilla-tilt";
 import projects from "../../projects.js";
-import project from "./projectstyle.css";
-import { Link } from "react-router-dom";
+import "./projectstyle.css";
+import Modal from "../Modal/Index";
 
-function index() {
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
+
+function Index() {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalInfo, setModalInfo] = React.useState({});
+
+  const handleModal = (x) => {
+    setIsOpen(true);
+    setModalInfo(x);
+  };
+
   return (
-    <div className="backGround">
-      <div className="glass">
-        <div className="parent">
-          <Link to="/" className="linkStyle">
-            <li className="homeStyle2">Home</li>
-          </Link>
-
-          <div className="projectLayout">
-            {projects.map((x) => (
-              <div className="item">
-                <img src={x.image} />
-                <div className="projectName">{x.name} </div>
-              </div>
-            ))}
-          </div>
+    <div id="projects">
+      <div className="parent">
+        <div className="title">Projects</div>
+        <div className="projectLayout">
+          {projects.map((x) => (
+            <div className="item" onClick={() => handleModal(x)}>
+              <img src={x.image} />
+              <div className="projectName">{x.name} </div>
+            </div>
+          ))}
         </div>
       </div>
+      <Modal
+        open={modalIsOpen}
+        info={modalInfo}
+        onClose={() => setIsOpen(false)}
+      />
     </div>
   );
 }
 
-export default index;
+export default Index;

@@ -1,79 +1,27 @@
-.hmbtn {
-  color: white;
-  font-family: LemonMelon;
-  text-decoration: none;
-  font-size: 45px;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
-.back {
-  cursor: pointer;
-  text-orientation: upright;
-  writing-mode: vertical-lr;
-  text-transform: uppercase;
-  font-family: LemonMelon;
-  color: white;
-  font-size: 40px;
+.aboutParent {
+  align-items: center;
+  flex-wrap: wrap;
   position: relative;
   z-index: 1;
-  margin: 0;
-}
-.skills {
-  margin: 0;
-}
-.square p {
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  margin: 0;
-  color: white;
-  font-size: 55px;
-  font-family: CoffeeSigns;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 50px;
 }
 
-.bkground {
-  background: url("https://images.unsplash.com/photo-1535392432937-a27c36ec07b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
+.aboutImage {
+  width: 30%;
+  margin-right: 10px;
+  border-radius: 25px 25px 25px;
 }
 
-.square {
-  height: 80vh;
-  width: 90vw;
-  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-  transform: translate(0%, 10%);
-  overflow: hidden;
-  display: inline-block;
-  color: #000;
-}
-
-.square:before {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-}
-.textDiv {
-  position: relative;
-  z-index: 100;
+.aboutDiv {
   display: flex;
-  margin: 0 auto;
-  flex-direction: row-reverse;
-  width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -90,15 +38,45 @@
   margin: 1px;
 }
 
+.aboutBox {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutBox {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .aboutDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .social {
+    display: flex;
+    font-family: monospace;
+    padding-left: 15px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .bio {
   color: white;
   font-family: monospace;
   font-size: 20px;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-transform: capitalize;
+  flex-wrap: wrap;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .socialIcons {
@@ -132,17 +110,15 @@ a {
 .link,
 .email {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   visibility: hidden;
   opacity: 0;
+  padding-top: 15px;
+
   transition: visibility 0s, opacity 0.5s linear;
 }
 .social {
-  z-index: 2;
-  position: relative;
   display: flex;
-  float: right;
-  /* transform: translateX(4em); */
-  /* justify-content: center;
-  align-items: center; */
+  font-family: monospace;
+  padding-left: 15px;
 }

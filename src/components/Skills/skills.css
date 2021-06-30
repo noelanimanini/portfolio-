@@ -6,11 +6,18 @@
   bottom: 250px; */
 }
 
+.skillsTitle {
+  font-family: CoffeeSigns;
+  font-size: 50px;
+  color: white;
+}
+
 .topDog {
   z-index: 1;
   display: flex;
   padding: 10px;
   width: 70%;
+  margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
 }

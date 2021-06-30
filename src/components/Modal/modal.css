@@ -1,0 +1,84 @@
+.modalImage {
+  width: 90%;
+  height: 90%;
+}
+
+.modalTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalTopSocial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalTopSocialicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.modalTopSocialIcon {
+  height: 30px;
+  width: 30px;
+  margin-left: 15px;
+  margin-top: 3px;
+  color: black;
+}
+
+.modalTop h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+}
+
+.description {
+  padding: 13px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.technologies h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+}
+
+.technologies li {
+  list-style: none;
+  text-align: center;
+}
+
+.CloseButton {
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  transform: translate(-40px, -40px);
+}
+
+.CloseButton:hover {
+  background-color: #fa9c7f;
+  box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+  color: #fff;
+  /* transform: translateY(-2px); */
+}

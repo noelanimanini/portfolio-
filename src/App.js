@@ -12,9 +12,9 @@ function App() {
       <div>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" render={() => <NavBar />} />
-            <Route exact path="/about" render={() => <About />} />
-            <Route exact path="/projects" render={() => <Projects_layout />} />
+            <Route exact path="/" render={() => <Home />} />
+            {/* <Route exact path="/about" render={() => <About />} />
+            <Route exact path="/projects" render={() => <Projects_layout />} /> */}
             <Route exact path="/email" render={() => <Email />} />
           </Switch>
         </BrowserRouter>

@@ -2,9 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import Tilt from "react-vanilla-tilt";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
 import "./navbar.css";
-
+import { Nav } from "react-bootstrap";
 const NavBar = () => {
   useEffect(() => {
     Aos.init({
@@ -12,37 +11,25 @@ const NavBar = () => {
     });
   }, []);
   return (
-    <div className="backGround">
-      <div className="glass">
-        <div className="spacing">
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            <Link to="/projects" className="linkStyle">
-              <Tilt style={{ height: "10px", width: "10px" }}>
-                <li className="projectStyle">Projects</li>
-              </Tilt>
-            </Link>
-          </div>
-          <div data-aos="fade-down" className="welcome">
-            <li>Crystal Villanueva</li>
-          </div>
-
-          <div
-            data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            <Link to="/about" className="linkStyle">
-              <Tilt style={{ height: "10px" }}>
-                <li className="aboutStyle">About</li>
-              </Tilt>
-            </Link>
-          </div>
-        </div>
+    <div className="spacing">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        className="linkStyle"
+      >
+        <Nav.Link href="#projects" className="linkStyle">
+          <li className="projectStyle">Projects</li>
+        </Nav.Link>
+        <Nav.Link href="#about" className="linkStyle">
+          <li className="aboutStyle">About</li>
+        </Nav.Link>
+        <Nav.Link href="#contact" className="linkStyle">
+          <li className="aboutStyle">Contact</li>
+        </Nav.Link>
+      </div>
+      <div data-aos="fade-down" className="welcome">
+        <li>Crystal Villanueva</li>
       </div>
     </div>
   );

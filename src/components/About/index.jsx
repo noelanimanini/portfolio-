@@ -12,67 +12,47 @@ import "./about.css";
 
 function About() {
   return (
-    <div className="bkground">
-      <div className="square">
-        <p>Hi I'm Crystal</p>
-        <div style={{ display: "flex" }}>
-          <div className="back">
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <h1 className="hmbtn"> Home</h1>
-            </Link>
-          </div>
-          <div className="textDiv">
-            <div className="skills">
-              <Skills />
-            </div>
-            <div className="name">
-              {/* <Image src={crystal} style={{ width: "40%" }} roundedCircle /> */}
+    <div id="about" className="aboutParent">
+      <div className="aboutDiv">
+        <h3 className="name">Hi I'm Crystal</h3>
+        <div className="aboutBox">
+          <img src={crystal} className="aboutImage" />
+          <div>
+            <p className="bio">
+              I'm a Seattle based software engineer with a background in
+              neuroscience.
+            </p>
+            <div className="social">
+              <a
+                href="https://github.com/noelanimanini"
+                className="target"
+                target="_blank"
+                rel="noreferrer"
+                style={{ textDecoration: "none", color: "#ffffff" }}
+              >
+                <AiFillGithub className="socialIcons" />
+                <div className="git">Github</div>
+              </a>
 
-              <div className="bio">
-                <Image
-                  src={crystal}
-                  style={{ width: "45%", height: "10%" }}
-                  roundedCircle
-                />
-                I'm a Seattle based software engineer with a background in
-                neuroscience.
-              </div>
+              <a
+                href="https://www.linkedin.com/in/crystal-villanueva-151353145/"
+                className="target"
+                target="_blank"
+                rel="noreferrer"
+                style={{ textDecoration: "none", color: "#ffffff" }}
+              >
+                <AiFillLinkedin className="socialIcons" />
+                <div className="link">Linkedin</div>
+              </a>
 
-              <div className="social">
-                <a
-                  href="https://github.com/noelanimanini"
-                  className="target"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ textDecoration: "none", color: "#ffffff" }}
-                >
-                  <AiFillGithub
-                    className="socialIcons"
-                    onClick={() => console.log("this works")}
-                  />
-                  <div className="git">Github</div>
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/crystal-villanueva-151353145/"
-                  className="target"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ textDecoration: "none", color: "#ffffff" }}
-                >
-                  <AiFillLinkedin className="socialIcons" />
-                  <div className="link">Linkedin</div>
-                </a>
-
-                <Link
-                  to="/email"
-                  style={{ textDecoration: "none", color: "#ffffff" }}
-                  target="_blank"
-                >
-                  <MdEmail className="socialIcons" />
-                  <div className="email"> Email </div>
-                </Link>
-              </div>
+              <Link
+                to="/email"
+                style={{ textDecoration: "none", color: "#ffffff" }}
+                target="_blank"
+              >
+                <MdEmail className="socialIcons" />
+                <div className="email"> Email </div>
+              </Link>
             </div>
           </div>
         </div>
