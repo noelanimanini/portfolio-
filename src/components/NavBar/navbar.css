@@ -1,18 +1,32 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 600px) {
-  .welcome h1 {
-    font-size: 30px;
-    top: 45%;
-    position: relative;
-    left: 75%;
-    max-width: 55%;
-    /* font-family: LemonMelon; */
-    /* transform: translate(-60%, -60%); */
-    color: white;
+  .spacing {
+    display: inline-flex;
+
+    width: inherit;
+    height: inherit;
+    flex-direction: column;
+    scroll-behavior: smooth auto;
+  }
+  .linkStyle {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .welcome li {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    transform: translateY(5vh);
+    margin-bottom: 30vh;
+    color: black;
   }
 }
 
@@ -72,6 +86,8 @@
   width: inherit;
   height: inherit;
   flex-direction: column;
+  scroll-behavior: smooth;
+  animation-delay: 1000ms;
 }
 
 .linkStyle {
