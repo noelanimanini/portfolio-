@@ -71,6 +71,8 @@
   font-family: "Permanent Marker", cursive;
   font-size: 20px;
   color: rgb(36, 35, 35);
+  margin: 0 auto;
+  transform: translateY(30px);
 }
 
 @media only screen and (max-width: 320px) {
