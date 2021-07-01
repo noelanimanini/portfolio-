@@ -1,16 +1,22 @@
 import React from "react";
-import { AiOutlineHtml5, AiOutlineConsoleSql } from "react-icons/ai";
+import {
+  AiOutlineHtml5,
+  AiOutlineConsoleSql,
+  AiFillGithub,
+} from "react-icons/ai";
 import { DiCss3, DiReact, DiJavascript1, DiRuby } from "react-icons/di";
 import { SiMaterialUi, SiHeroku } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
 import { ImStack } from "react-icons/im";
+import { FaAws } from "react-icons/fa";
 import "./skills.css";
 
 function Skills() {
   return (
     <div>
-      <h1 className="skillsTitle">Skills</h1>
+      <div className="skillsTitle">Skills</div>
+
       <div className="container">
         <div className="topDog">
           <div className="raise">
@@ -55,6 +61,11 @@ function Skills() {
             <div className="css3">CSS3</div>
           </div>
           <div className="raise">
+            <AiFillGithub className="icon2" />
+            <div className="bar front expert" data-skill="html5"></div>
+            <div className="html5">Github</div>
+          </div>
+          <div className="raise">
             <AiOutlineHtml5 className="icon2" />
             <div className="bar front expert" data-skill="html5"></div>
             <div className="html5">HTML5</div>
@@ -71,6 +82,11 @@ function Skills() {
             <SiHeroku className="icon3" />
             <div className="bar front intermediate" data-skill="heroku"></div>
             <div className="heroku">Heroku</div>
+          </div>
+          <div className="raise">
+            <FaAws className="icon3" />
+            <div className="bar front intermediate" data-skill="heroku"></div>
+            <div className="heroku">AWS</div>
           </div>
         </div>
       </div>

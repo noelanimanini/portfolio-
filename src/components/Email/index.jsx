@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
-import { Form, Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import thank from "../images/thank2.png";
 import "./email.css";
 
@@ -32,7 +32,7 @@ function Contact() {
       <h1 className="contact">CONTACT</h1>
       <div className="layout">
         <div className="message">
-          <img src={thank} className="thank" />
+          <img src={thank} className="thank" alt="thankyou" />
           <div className="message2">
             If you'd like to get in contact with me, feel free to send me a
             message!

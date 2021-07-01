@@ -12,6 +12,9 @@
   font-size: 60px;
   text-shadow: -5px 1px 51px #0000002e;
   color: white;
+  text-shadow: 0 0 6px rgba(182, 211, 207, 1), 0 0 30px rgb(254, 229, 131),
+    0 0 12px rgba(255, 155, 207, 0.981), 0 0 22px rgba(15, 115, 223, 0.8),
+    0 0 38px rgba(255, 155, 207, 0.981), 0 0 60px rgba(15, 115, 223, 1);
 }
 .projectLayout {
   /* width: 90%; */
@@ -66,13 +69,17 @@
   transform: rotate(15deg);
 }
 
+.projectImage {
+  width: 100%;
+}
+
 .projectName {
   padding: 10px;
   font-family: "Permanent Marker", cursive;
   font-size: 20px;
   color: rgb(36, 35, 35);
   margin: 0 auto;
-  transform: translateY(30px);
+  transform: translateY(20px);
 }
 
 @media only screen and (max-width: 320px) {

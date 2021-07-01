@@ -10,6 +10,9 @@
   font-family: CoffeeSigns;
   font-size: 50px;
   color: white;
+  text-shadow: 0 0 6px rgba(182, 211, 207, 1), 0 0 30px rgb(254, 229, 131),
+    0 0 12px rgba(255, 155, 207, 0.981), 0 0 22px rgba(15, 115, 223, 0.8),
+    0 0 38px rgba(255, 155, 207, 0.981), 0 0 60px rgba(15, 115, 223, 1);
 }
 
 .topDog {

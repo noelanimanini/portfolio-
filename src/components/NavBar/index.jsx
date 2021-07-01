@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
-import Tilt from "react-vanilla-tilt";
+import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./navbar.css";
@@ -18,13 +17,13 @@ const NavBar = () => {
         data-aos-easing="ease-in-sine"
         className="linkStyle"
       >
-        <Nav.Link href="#projects" className="linkStyle">
-          <li className="projectStyle">Projects</li>
+        <Nav.Link href="#projects" className="dance">
+          <li className="aboutStyle">Projects</li>
         </Nav.Link>
-        <Nav.Link href="#about" className="linkStyle">
+        <Nav.Link href="#about" className="dance">
           <li className="aboutStyle">About</li>
         </Nav.Link>
-        <Nav.Link href="#contact" className="linkStyle">
+        <Nav.Link href="#contact" className="dance">
           <li className="aboutStyle">Contact</li>
         </Nav.Link>
       </div>

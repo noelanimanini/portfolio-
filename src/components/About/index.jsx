@@ -1,13 +1,9 @@
 import React from "react";
-import thank from "../images/thank.png";
-import crystal from "../images/crystal2.jpg";
-import Skills from "../Skills/index";
-import { Image, Card } from "react-bootstrap";
+import crystal from "../images/0.jpg";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Tilt from "react-vanilla-tilt";
 import "./about.css";
 
 function About() {
@@ -16,7 +12,8 @@ function About() {
       <div className="aboutDiv">
         <h3 className="name">Hi I'm Crystal</h3>
         <div className="aboutBox">
-          <img src={crystal} className="aboutImage" />
+          <img src={crystal} className="aboutImage" alt="profile" />
+
           <div>
             <p className="bio">
               I'm a Seattle based software engineer with a background in

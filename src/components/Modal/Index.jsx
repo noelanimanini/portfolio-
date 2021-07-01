@@ -34,7 +34,7 @@ function Index({ info, open, onClose }) {
   // console.log(Object.values(info["technologies"][0]));
   return ReactDom.createPortal(
     <>
-      <div style={overStyles}>
+      <div style={overStyles} onClick={onClose}>
         <div style={customStyles}>
           <button onClick={onClose} className="CloseButton">
             CLOSE
@@ -43,30 +43,42 @@ function Index({ info, open, onClose }) {
           <div className="modalTop">
             <div className="modalTopSocial">
               <h2>{info.name}</h2>
-              <img src={info.image} alt="project info" className="modalImage" />
               <div className="modalTopSocialicons">
-                <a href={info["links"][0]["git"]} target="_blank">
+                <a
+                  href={info["links"][0]["git"]}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <AiFillGithub className="modalTopSocialIcon" />
                 </a>
                 {!info["links"][0]["video"] ? null : (
-                  <a href={info["links"][0]["video"]} target="_blank">
+                  <a
+                    href={info["links"][0]["video"]}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <AiFillYoutube className="modalTopSocialIcon" />
                   </a>
                 )}
                 {!info["links"][0]["demo"] ? null : (
-                  <a href={info["links"][0]["demo"]} target="_blank">
+                  <a
+                    href={info["links"][0]["demo"]}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <CgWebsite className="modalTopSocialIcon" />
                   </a>
                 )}
               </div>
             </div>
+            <img src={info.image} alt="project info" className="modalImage" />
 
             <div className="description">{info.description}</div>
           </div>
           <div className="technologies">
             <h2>Technologies</h2>
             {Object.values(info["technologies"][0]).map((x) => (
-              <li>{x}</li>
+              <p>{x}</p>
             ))}
           </div>
         </div>
