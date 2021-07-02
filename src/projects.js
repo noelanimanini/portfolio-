@@ -5,6 +5,7 @@ import konek from "../src/components/images/konek.png";
 import covid from "../src/components/images/covid1.png";
 import note from "../src/components/images/note.png";
 import cli from "../src/components/images/cli.png";
+import recipe from "../src/components/images/recipe.png";
 
 const projects = [
   {
@@ -211,6 +212,26 @@ const projects = [
         video:
           "https://www.youtube.com/watch?v=CVYRnzR-aZw&ab_channel=crystalvillanueva",
         git: "https://github.com/noelanimanini/ruby-project-alt-guidelines",
+      },
+    ],
+  },
+  {
+    name: "RANDORECIPE",
+    description:
+      "A vanilla javascript app where the user can search for recipes, pin recipes, and, refresh and find randomized recipes. This app uses a third party recipe API. I created modals and was able to load recipe information to the modals.",
+    image: recipe,
+    technologies: [
+      {
+        javascript: "javascript",
+      },
+    ],
+    dateCreated: "05-02-2021",
+    links: [
+      {
+        video:
+          "https://www.youtube.com/watch?v=-Zc-Sm6rCRg&ab_channel=crystalvillanueva",
+        git: "https://github.com/noelanimanini/recipe",
+        demo: "https://noelanimanini.github.io/recipe/",
       },
     ],
   },
