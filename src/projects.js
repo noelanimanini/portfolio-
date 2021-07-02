@@ -163,39 +163,7 @@ const projects = [
       },
     ],
   },
-  {
-    name: "Digi-Clusive",
-    description:
-      "Although 1 in 5 are disabled, essential platforms, weren't designed with inclusivity in mind. Digi-Clusive mends the digital divide of accessibility and crucial social distancing platforms (Zoom). **Winner (Top 12 / 7th Place) at Hydrgrangea Hacks, the largest Hackathon for Women and Non-Binary individuals",
-    image: digiclusive,
-    technologies: [
-      {
-        JavaScript: "JavaScript",
-        HTML: " HTML",
-        CSS: " CSS",
-        Figma: "figma",
-        React: "React",
-        Heroku: "Heroku",
-        Netlify: "Netlify",
-        Github: "Github",
-        Python: "Python",
-      },
-    ],
-    dateCreated: "05-02-2021",
-    links: [
-      {
-        demo: "https://digiclusive.herokuapp.com/",
-        video:
-          "https://www.youtube.com/watch?v=sNqDBMQ2D08&feature=emb_title&ab_channel=BarbraT",
-        git: "https://github.com/noelanimanini/zoom_app",
-      },
-    ],
-    awards: [
-      {
-        award: "Winner",
-      },
-    ],
-  },
+
   {
     name: "BookStore CLI",
     description:
@@ -234,6 +202,39 @@ const projects = [
           "https://www.youtube.com/watch?v=-Zc-Sm6rCRg&ab_channel=crystalvillanueva",
         git: "https://github.com/noelanimanini/recipe",
         demo: "https://noelanimanini.github.io/recipe/",
+      },
+    ],
+  },
+  {
+    name: "Digi-Clusive",
+    description:
+      "Although 1 in 5 are disabled, essential platforms, weren't designed with inclusivity in mind. Digi-Clusive mends the digital divide of accessibility and crucial social distancing platforms (Zoom). **Winner (Top 12 / 7th Place) at Hydrgrangea Hacks, the largest Hackathon for Women and Non-Binary individuals",
+    image: digiclusive,
+    technologies: [
+      {
+        JavaScript: "JavaScript",
+        HTML: " HTML",
+        CSS: " CSS",
+        Figma: "figma",
+        React: "React",
+        Heroku: "Heroku",
+        Netlify: "Netlify",
+        Github: "Github",
+        Python: "Python",
+      },
+    ],
+    dateCreated: "05-02-2021",
+    links: [
+      {
+        demo: "https://digiclusive.herokuapp.com/",
+        video:
+          "https://www.youtube.com/watch?v=sNqDBMQ2D08&feature=emb_title&ab_channel=BarbraT",
+        git: "https://github.com/noelanimanini/zoom_app",
+      },
+    ],
+    awards: [
+      {
+        award: "Winner",
       },
     ],
   },

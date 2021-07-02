@@ -88,6 +88,11 @@
   transition: all 0.35s;
 }
 .item:nth-of-type(4n + 4) {
+  transform: rotate(-3deg);
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n + 5) {
   transform: rotate(3deg);
   transition: all 0.35s;
 }
