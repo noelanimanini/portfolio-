@@ -1,6 +1,6 @@
 import React from "react";
 import crystal from "../images/0.jpg";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiOutlineMedium } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -29,6 +29,17 @@ function About() {
               >
                 <AiFillGithub className="socialIcons" />
                 <div className="git">Github</div>
+              </a>
+
+              <a
+                href="https://crystal-villanueva.medium.com/"
+                className="target"
+                target="_blank"
+                rel="noreferrer"
+                style={{ textDecoration: "none", color: "#ffffff" }}
+              >
+                <AiOutlineMedium className="socialIcons" />
+                <div className="link">Blog</div>
               </a>
 
               <a

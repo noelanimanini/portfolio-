@@ -104,7 +104,7 @@
 }
 
 .socialIcons {
-  width: 40px;
+  width: 30px;
   height: 40px;
 }
 
@@ -134,7 +134,7 @@ a {
 .link,
 .email {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 13px;
   visibility: hidden;
   opacity: 0;
   padding-top: 15px;
