@@ -155,3 +155,36 @@
   z-index: 1;
   transform: translateX(27em);
 }
+
+.outer {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.outer span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 2px 0;
+  background-color: #feea9c;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.ribbon-top-left {
+  top: 0px;
+  left: 0px;
+}
+
+.ribbon-top-left span {
+  right: -10px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+.trophy {
+  color: #fab608e0;
+  width: 90px;
+}

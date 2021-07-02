@@ -4,6 +4,7 @@ import potentialback from "../src/components/images/potentialback.png";
 import konek from "../src/components/images/konek.png";
 import covid from "../src/components/images/covid1.png";
 import note from "../src/components/images/note.png";
+import cli from "../src/components/images/cli.png";
 
 const projects = [
   {
@@ -55,11 +56,11 @@ const projects = [
         JavaScript: "JavaScript",
         HTML: " HTML",
         CSS: " CSS",
-        Figma: " Figma",
+        Figma: "figma",
         Python: "Python",
         Github: "Github",
         React: "React",
-        BootStrap: "BootStrap",
+        BootStrap: "bootstrap",
       },
     ],
     dateCreated: "05-02-2021",
@@ -79,10 +80,10 @@ const projects = [
     image: covid,
     technologies: [
       {
-        JavaScript: "JavaScript",
+        JavaScript: "javascript",
         HTML: " HTML",
         CSS: " CSS",
-        Figma: " Figma",
+        Figma: "figma",
         Java: " Java",
         AWS: "AWS",
         React: "React",
@@ -137,7 +138,7 @@ const projects = [
   {
     name: "Notelify",
     description:
-      "Our app allows users to login or signup to see all study groups available... Additionally, they can enter a room and see all the users in this study group and chat with them as well. A user can also navigate to their profile page to see what study groups they're in. Our front end is built with ReactJS and our backend is built with Node and Express.",
+      "A Note taking app with full CRUD operations. This app lets users create notes, delete notes, update notes, search through notes and see all notes.",
     image: note,
     technologies: [
       {
@@ -156,6 +157,8 @@ const projects = [
       {
         demo: "https://suspicious-leavitt-d03963.netlify.app/login",
         git: "https://github.com/noelanimanini/notefrontend",
+        video:
+          "https://www.youtube.com/watch?v=vwkdQGorwys&feature=youtu.be&ab_channel=crystalvillanueva",
       },
     ],
   },
@@ -169,7 +172,7 @@ const projects = [
         JavaScript: "JavaScript",
         HTML: " HTML",
         CSS: " CSS",
-        Figma: " Figma",
+        Figma: "figma",
         React: "React",
         Heroku: "Heroku",
         Netlify: "Netlify",
@@ -189,6 +192,25 @@ const projects = [
     awards: [
       {
         award: "Winner",
+      },
+    ],
+  },
+  {
+    name: "BookStore CLI",
+    description:
+      "A Command Line Interface app that allows a bookstore worker to check their database to see all the books in their store, stores in their areas, which books belong to which store, if they can order a book, etc.",
+    image: cli,
+    technologies: [
+      {
+        ruby: "ruby",
+      },
+    ],
+    dateCreated: "05-02-2021",
+    links: [
+      {
+        video:
+          "https://www.youtube.com/watch?v=CVYRnzR-aZw&ab_channel=crystalvillanueva",
+        git: "https://github.com/noelanimanini/ruby-project-alt-guidelines",
       },
     ],
   },

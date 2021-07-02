@@ -2,6 +2,7 @@ import React from "react";
 import projects from "../../projects.js";
 import "./projectstyle.css";
 import Modal from "../Modal/Index";
+import { BsTrophy } from "react-icons/bs";
 
 function Index() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -20,9 +21,15 @@ function Index() {
         <div className="projectLayout">
           {projects.map((x) => (
             <div className="item" onClick={() => handleModal(x)}>
-              <div className="outline">
-                <img src={x.image} className="projectImage" alt={x.name} />
-              </div>
+              {x.awards ? (
+                <div class="outer ribbon-top-left">
+                  <span>
+                    <BsTrophy className="trophy" />
+                  </span>
+                </div>
+              ) : null}
+              <img src={x.image} className="projectImage" alt={x.name} />
+
               <div className="projectName">{x.name} </div>
             </div>
           ))}

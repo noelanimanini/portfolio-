@@ -75,10 +75,10 @@ function Index({ info, open, onClose }) {
 
             <div className="description">{info.description}</div>
           </div>
+          <div className="techTitle">Technologies</div>
           <div className="technologies">
-            <h2>Technologies</h2>
             {Object.values(info["technologies"][0]).map((x) => (
-              <p>{x}</p>
+              <span>{x}</span>
             ))}
           </div>
         </div>
