@@ -218,11 +218,13 @@ const projects = [
   {
     name: "RANDORECIPE",
     description:
-      "A vanilla javascript app where the user can search for recipes, pin recipes, and, refresh and find randomized recipes. This app uses a third party recipe API. I created modals and was able to load recipe information to the modals.",
+      "A vanilla javascript app where the user can search for recipes, pin recipes, and, refresh and find randomized recipes. This app uses a third party recipe API. I created modals and was able to load recipe information to the modals. I used CSS to style everything and created my HTML tree",
     image: recipe,
     technologies: [
       {
         javascript: "javascript",
+        html: "HTML",
+        css: "css",
       },
     ],
     dateCreated: "05-02-2021",
