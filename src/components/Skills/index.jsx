@@ -4,7 +4,13 @@ import {
   AiOutlineConsoleSql,
   AiFillGithub,
 } from "react-icons/ai";
-import { DiCss3, DiReact, DiJavascript1, DiRuby } from "react-icons/di";
+import {
+  DiCss3,
+  DiReact,
+  DiJavascript1,
+  DiRuby,
+  DiPostgresql,
+} from "react-icons/di";
 import { SiMaterialUi, SiHeroku } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
@@ -87,6 +93,11 @@ function Skills() {
             <FaAws className="icon3" />
             <div className="bar front intermediate" data-skill="heroku"></div>
             <div className="heroku">AWS</div>
+          </div>
+          <div className="raise">
+            <DiPostgresql className="icon3" />
+            <div className="bar front intermediate" data-skill="heroku"></div>
+            <div className="heroku">Postgresql</div>
           </div>
         </div>
       </div>
