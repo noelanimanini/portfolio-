@@ -14,7 +14,7 @@
 }
 
 .aboutImage {
-  width: 30%;
+  width: 40%;
   margin-right: 10px;
   border-radius: 25px 25px 25px 25px;
   transition: 4s, ease 0.5s linear;
@@ -58,40 +58,6 @@
   margin: 0 auto;
   align-items: center;
   width: 50%;
-}
-@media screen and (min-width: 900px) {
-  .aboutDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .aboutBox {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-  }
-  .aboutDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .social {
-    display: flex;
-    font-family: monospace;
-    padding-left: 15px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .bio {
@@ -145,4 +111,74 @@ a {
   display: flex;
   font-family: monospace;
   padding-left: 15px;
+}
+
+/* @media screen and (min-width: 900px) {
+  .aboutDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .bio {
+    color: white;
+    font-family: monospace;
+    font-size: 45px;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .socialIcons {
+    width: 60px;
+    height: 60px;
+  }
+  .name {
+    color: white;
+    font-family: CoffeeSigns;
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 68%;
+    margin: 1px;
+  }
+  .git,
+  .link,
+  .email {
+    text-decoration: none;
+    font-size: 35px;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 15px;
+
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .aboutBox {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .aboutDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .social {
+    display: flex;
+    font-family: monospace;
+    padding-left: 15px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
 }

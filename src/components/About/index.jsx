@@ -1,5 +1,5 @@
 import React from "react";
-import crystal from "../images/0.jpg";
+import crystal from "../images/photo.jpg";
 import { AiFillGithub, AiOutlineMedium } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
