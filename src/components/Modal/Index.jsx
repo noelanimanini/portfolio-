@@ -2,11 +2,12 @@ import React from "react";
 import ReactDom from "react-dom";
 import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
+import Carousel from "react-bootstrap/Carousel";
 import "./modal.css";
 
 function Index({ info, open, onClose }) {
   if (!open) return null;
-  // console.log(Object.values(info["technologies"][0]));
+  console.log(info);
   return ReactDom.createPortal(
     <>
       <div className="overLayStyle" onClick={onClose}>
@@ -46,7 +47,11 @@ function Index({ info, open, onClose }) {
                 )}
               </div>
             </div>
+            {/* <Carousel fade>
+              <Carousel.Item> */}
             <img src={info.image} alt="project info" className="modalImage" />
+            {/* </Carousel.Item>
+            </Carousel> */}
 
             <div className="description">{info.description}</div>
           </div>
