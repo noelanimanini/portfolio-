@@ -100,3 +100,132 @@
   color: #fff;
   /* transform: translateY(-2px); */
 }
+
+.overLayStyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  overflow-y: scroll;
+}
+
+.customStyle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 10px;
+  z-index: 100;
+  width: 60%;
+  height: 60%;
+  overflow-y: scroll;
+  border-radius: 15px 15px 15px 15px;
+}
+
+@media screen and (min-height: 100px) {
+  .overLayStyle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow-y: scroll;
+  }
+
+  .customStyle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    z-index: 100;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    border-radius: 15px 15px 15px 15px;
+  }
+  .modalTopSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CloseButton {
+    width: 100px;
+    height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    transform: translate(10px);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 360px), (min-height: 640px) {
+  .overLayStyle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow-y: scroll;
+  }
+
+  .customStyle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    z-index: 100;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    border-radius: 15px 15px 15px 15px;
+  }
+  .modalTopSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CloseButton {
+    width: 100px;
+    height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    transform: translate(10px);
+    margin-bottom: 30px;
+  }
+}

@@ -4,38 +4,13 @@ import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
 import "./modal.css";
 
-const customStyles = {
-  position: "fixed",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  backgroundColor: "#FFF",
-  padding: "50px",
-  zIndex: 100,
-  width: "60%",
-  height: "60%",
-  overflowY: "scroll",
-  borderRadius: "20px 20px 20px 20px",
-};
-
-const overStyles = {
-  position: "fixed",
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  backgroundColor: "rgba(0,0,0, .7)",
-  zIndex: 1000,
-  overflowY: "scroll",
-};
-
 function Index({ info, open, onClose }) {
   if (!open) return null;
   // console.log(Object.values(info["technologies"][0]));
   return ReactDom.createPortal(
     <>
-      <div style={overStyles} onClick={onClose}>
-        <div style={customStyles}>
+      <div className="overLayStyle" onClick={onClose}>
+        <div className="customStyle">
           <button onClick={onClose} className="CloseButton">
             CLOSE
           </button>
