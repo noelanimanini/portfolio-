@@ -11,10 +11,11 @@ function Home() {
     <div className="backGround">
       <div className="glass">
         <NavBar />
+        <div style={{ height: "2vh" }}></div>
         <About />
-        <div style={{ height: "20vh" }}></div>
+        <div style={{ height: "45vh" }}></div>
         <Skills />
-        <div style={{ height: "20vh" }}></div>
+        <div style={{ height: "45vh" }}></div>
         <Projects />
         <div style={{ height: "20vh" }}></div>
         <Email />
