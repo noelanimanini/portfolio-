@@ -21,7 +21,7 @@
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .aboutImage:hover {
@@ -32,6 +32,7 @@
     0 0 30px rgba(182, 211, 207, 0.3), 0 0 12px rgba(255, 155, 155, 0.981),
     0 0 21px rgba(15, 115, 223, 0.9), 0 0 34px rgba(255, 155, 155, 0.981),
     0 0 54px rgba(255, 155, 155, 0.981);
+  transform: scale(1.1);
 }
 
 .aboutDiv {
