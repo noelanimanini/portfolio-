@@ -10,24 +10,26 @@ const NavBar = () => {
     });
   }, []);
   return (
-    <div className="spacing">
-      <div
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-        className="linkStyle"
-      >
-        <Nav.Link href="#projects" className="dance">
-          <li className="aboutStyle">Projects</li>
-        </Nav.Link>
-        <Nav.Link href="#about" className="dance">
-          <li className="aboutStyle">About</li>
-        </Nav.Link>
-        <Nav.Link href="#contact" className="dance">
-          <li className="aboutStyle">Contact</li>
-        </Nav.Link>
+    <div>
+      <div className="spacing">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="linkStyle"
+        >
+          <Nav.Link href="#projects" className="dance">
+            <li className="aboutStyle">Projects</li>
+          </Nav.Link>
+          <Nav.Link href="#about" className="dance">
+            <li className="aboutStyle">About</li>
+          </Nav.Link>
+          <Nav.Link href="#contact" className="dance">
+            <li className="aboutStyle">Contact</li>
+          </Nav.Link>
+        </div>
       </div>
-      <div data-aos="fade-down" className="welcome">
+      <div className="welcome">
         <li>Crystal Villanueva</li>
       </div>
     </div>
